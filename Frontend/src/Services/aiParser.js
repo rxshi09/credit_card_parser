@@ -1,6 +1,6 @@
 const PARSING_PROMPT = `You are an expert at parsing credit card statements. Extract the following 5 key data points from the provided credit card statement text:  
 1. Bank Name (e.g., HDFC Bank, ICICI Bank, SBI Card, Axis Bank, Kotak Mahindra Bank)  
-2. Card Last 4 Digits (if found two digit like 12 then return XX12)  
+2. Card Last 4 Digits (if found two digit like 12 and not 4 digit then return XX12 or else return last 4 digit)  
 3. Billing Cycle (e.g., "01 Sep 2024 - 30 Sep 2024")  
 4. Payment Due Date  
 5. Total Balance/Amount Due  
